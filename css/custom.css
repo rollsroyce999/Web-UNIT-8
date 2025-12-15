@@ -1,0 +1,11 @@
+html, body {
+  background-color: #ffffff;
+  
+}
+
+/* Navbar background: bright sky blue */
+.navbar-custom {
+  background-color: #00bfff; /* sky blue */
+  font-family: 'Comic Sans MS'; /* playful font */
+  color: white;
+}
