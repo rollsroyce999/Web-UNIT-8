@@ -3,9 +3,199 @@ html, body {
   
 }
 
-/* Navbar background: bright sky blue */
 .navbar-custom {
-  background-color: #00bfff; /* sky blue */
-  font-family: 'Comic Sans MS'; /* playful font */
+  background-color: #00bfff; 
+  font-family: 'Comic Sans MS'; 
   color: white;
+}
+
+#carousel-homepage .carousel-inner {
+  max-height: 650px;
+  overflow: hidden;
+}
+
+#carousel-homepage .carousel-item img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+    #carousel-homepage .carousel-inner,
+  #carousel-homepage .carousel-item img {
+    max-height: 200px;
+    height: 200px;
+}
+}
+
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+  margin: 10px;
+  display: inline-block;
+  width: 300px;
+  text-align: center;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.gallery-container {
+  text-align: center;
+  margin: 20px 0 40px 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  display: inline-block;
+  width: 300px;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 280px;
+    margin: 6px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+    margin: 6px 0;
+  }
+}
+
+/* Staff card styles */
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 300px;
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+/* Staff container styles */
+.staff-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 280px;
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
