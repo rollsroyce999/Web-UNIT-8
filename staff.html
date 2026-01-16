@@ -12,41 +12,37 @@
      <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
 
+     <!-- Icon Footer Source -->
+     <script src="https://kit.fontawesome.com/d6ed736d8c.js" crossorigin="anonymous"></script>
+
+     <!-- W3.CSS -->
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
 </head>
-<body>
 
-    <!--Nav start--> 
-
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<style>
-body {font-family:"Times New Roman", serif}
-h1,h2,h3,h4,h5,h6 {font-family:serif; letter-spacing:5px}
-h1, h2 {font-weight: bold;}
-</style>
-<body>
-
+<!-- Navigation Bar Start -->
 <div class="w3-top w3-bar w3-white w3-padding w3-card w3-wide">
-<a href="#home" class="w3-bar-item w3-button">With Grace</a>
+<a href="index.html" class="w3-bar-item w3-button">With Grace</a>
 
+<!--Navigation Bar Right Side Buttons-->
 <div class="w3-right w3-hide-small">
-<a href="home.html" class="w3-bar-item w3-button">Home</a>
+<a href="index.html" class="w3-bar-item w3-button">Home</a>
 <a href="services.html" class="w3-bar-item w3-button">Services</a>
+<a href="products.html" class="w3-bar-item w3-button">Products</a>
 <a href="location.html" class="w3-bar-item w3-button">Location</a>
-<a href="signup.html" class="w3-bar-item w3-button">Sign Up</a>
+<a href="contact.html" class="w3-bar-item w3-button">Contact</a>
 </div>
 </div>
+<!-- Navigation Bar End -->
 
-
-    <!--Nav end--> 
+<br>
+<br>
+<br>
 
     <!--Main content start--> 
-
-<br>
-<br>
-<br>
-
     <h1>Meet the Team</h1> <div class="center" ></div>
 
+    <!--Staff Member Cards-->
 <div class="staff-container">
   <div class="card">
     <img src="images/Royce Image.jpg" alt="Royce">
@@ -57,7 +53,7 @@ h1, h2 {font-weight: bold;}
       <p><button class="button">Contact</button></p>
     </div>
   </div>
-
+<!--Second Staff Member-->
   <div class="card">
     <img src="images/sanji.jpg" alt="Sanji">
     <div class="container">
@@ -67,7 +63,7 @@ h1, h2 {font-weight: bold;}
       <p><button class="button">Contact</button></p>
     </div>
   </div>
-
+<!--Third Staff Member-->
   <div class="card">
     <img src="images/soma.jpg" alt="Soma">
     <div class="container">
@@ -77,7 +73,7 @@ h1, h2 {font-weight: bold;}
       <p><button class="button">Contact</button></p>
     </div>
   </div>
-
+<!--Fourth Staff Member-->
   <div class="card">
     <img src="images/johan.jpg" alt="Johan">
     <div class="container">
@@ -88,7 +84,7 @@ h1, h2 {font-weight: bold;}
     </div>
   </div>
 </div>
-
+<!--Staff Member Cards End-->
 
 
     <!--Main content end--> 
@@ -98,52 +94,40 @@ h1, h2 {font-weight: bold;}
     <br>
 
     <!--Footer start-->
-        <div id="footer">
-      <footer class="bg-dark text-white py-2" style="font-size:0.9rem;">
-    <div class="container">
-      <div class="row g-3">
-        <div class="col-md-3">
-          <h5 style="font-size:1rem; margin-bottom:.5rem;">About Us</h5>
-          <div class="d-flex align-items-center gap-2 mb-2">
-            <img src="images/withgracelogo.jpeg" alt="With Grace logo" class="rounded-circle" width="40" height="40">
+    <div class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <!--First Column-->
+          <div class="col-md-4 d-flex flex-column">
+            <h3>OUR LINKS</h3>
+            <a href="index.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="products.html">Products</a>
+            <a href="location.html">Location</a>
+            <a href="contact.html">Contact</a>
           </div>
-          <p class="mb-0">Supporting people in need since 1997</p>
-        </div>
- 
-        <div class="col-md-3">
-          <h5 style="font-size:1rem; margin-bottom:.5rem;">Contact Us</h5>
-          <p class="mb-0">
-            <i class="bi bi-telephone"></i> +77 1234567 <br>
-            <i class="bi bi-envelope"></i> info@withgrace.com<br>
-            <i class="bi bi-geo-alt"></i> 99 Everlast Road, HS17 9TT, Dublin
-          </p>
-        </div>
- 
-        <div class="col-md-3">
-          <h5 style="font-size:1rem; margin-bottom:.5rem;">Support</h5>
-          <ul class="list-unstyled mb-0">
-            <li><a href="#" class="text-white-50 text-decoration-none">FAQ</a></li>
-            <li><a href="#" class="text-white-50 text-decoration-none">Troubleshooting</a></li>
-            <li><a href="#" class="text-white-50 text-decoration-none">Warranty Info</a></li>
-            <li><a href="contact.html" class="text-white-50 text-decoration-none">Contact Support</a></li>
-          </ul>
-        </div>
- 
-        <div class="col-md-3">
-          <h5 style="font-size:1rem; margin-bottom:.5rem;">Follow Us</h5>
-          <div class="d-flex gap-2">
-            <a href="#" class="text-white" style="font-size:1rem;"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-white" style="font-size:1rem; margin-left:.5rem;"><i class="bi bi-instagram"></i></a>
+          <!--Second Column-->
+          <div class="col-md-4">
+            <h3>Newsletter</h3>
+            <form>
+              <input type="email" placeholder="Your Email Address" required>
+              <br>
+              <button type="submit">Subscribe Now</button>
+            </form>
+          </div>
+          <!--Third Column-->
+          <div class="col-md-4">
+            <h3>Contact</h3>
+            <p>99 Everlast Road, HS17 9TT <br> Dublin, Ireland</p>
+            <div class="social-icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-snapchat"></i>
+            </div>
           </div>
         </div>
-      </div>
- 
-      <hr class="bg-white-50 my-2">
-      <div class="text-center text-white-50 small py-1">
-        <p class="mb-0">&copy; <span id="year"></span> With Grace Corporation. All rights reserved.</p>
       </div>
     </div>
-  </footer>
     <!--Footer end--> 
 
 

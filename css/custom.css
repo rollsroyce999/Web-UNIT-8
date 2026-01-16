@@ -3,12 +3,18 @@ html, body {
   
 }
 
-.navbar-custom {
-  background-color: #00bfff; 
-  font-family: 'Comic Sans MS'; 
-  color: white;
+/* Custom Fonts */
+body {
+  font-family:"Times New Roman", serif !important;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family:serif; letter-spacing:5px !important; 
+}
+h1, h2 {
+  font-weight: bold !important;
 }
 
+/* Carousel Styles */
 #carousel-homepage .carousel-inner {
   max-height: 650px;
   overflow: hidden;
@@ -28,75 +34,7 @@ html, body {
 }
 }
 
-* {box-sizing: border-box}
-
-/* Full-width input fields */
-  input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-/* Set a style for all buttons */
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
-button:hover {
-  opacity:1;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
-
-/* Add padding to container elements */
-.container {
-  padding: 16px;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-    width: 100%;
-  }
-}
-
+/* Product Page - Gallery Styles */
 div.gallery {
   border: 1px solid #ccc;
   margin: 10px;
@@ -123,10 +61,6 @@ div.desc {
 .gallery-container {
   text-align: center;
   margin: 20px 0 40px 0;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .responsive {
@@ -194,8 +128,101 @@ div.desc {
   }
 }
 
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+/* New Footer */
+.footer {
+  margin-top: 150px;
+  width: 100%;
+  padding: 100px 15%;
+  background: #97a8ca;
+  color: #efefef;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer div {
+  text-align: center;
+}
+.footer .col-1,
+.footer .col-2,
+.footer .col-3 {
+  flex: 1 1 250px;
+}
+.footer .col-2 {
+  flex-grow: 2;
+}
+.footer div h3 {
+  font-weight: 300;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.footer .col-1 a {
+  display: block;
+  text-decoration: none;
+  color: #efefef;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 50px 5%;
+  }
+  .footer .col-1,
+  .footer .col-2,
+  .footer .col-3 {
+    flex: 1 1 100%;
+    margin-bottom: 30px;
+  }
+  form input {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+/* Form Styles */
+form input { 
+  width: 100%;
+  max-width: 400px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+}
+form button {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+/* Social Icons for Footer */
+.social-icons {
+  margin-top: 30px;
+}
+.social-icons i {
+  font-size: 22px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/*Google Map*/
+/*Centering the content*/
+.container1{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/*Creating space between the heading and the map*/
+h1{
+  margin-bottom: 60px;
+}
+/*Adjusting the size of the map*/
+iframe{
+  width: 80%;
+  height: 500px;
 }

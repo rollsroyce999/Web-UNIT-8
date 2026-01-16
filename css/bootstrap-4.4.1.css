@@ -226,7 +226,7 @@ body {
   background: #A541BB;
   color: #fff;
 }
-#main #faq .card .card-header .btn-header-link.collapsed:after {}
+/* Removed empty ruleset: #main #faq .card .card-header .btn-header-link.collapsed:after {} */
 #main #faq .card .collapsing {
   background: #FFE472;
   line-height: 30px;
@@ -410,9 +410,7 @@ button, select {
 select {
   word-wrap: normal;
 }
-button, [type="button"], [type="reset"], [type="submit"] {
-  -webkit-appearance: button;
-}
+button, [type="button"], [type="reset"], [type="submit"]
 button:not(:disabled), [type="button"]:not(:disabled), [type="reset"]:not(:disabled), [type="submit"]:not(:disabled) {
   cursor: pointer;
 }
@@ -424,9 +422,8 @@ input[type="radio"], input[type="checkbox"] {
   box-sizing: border-box;
   padding: 0;
 }
-input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"] {
-  -webkit-appearance: listbox;
-}
+input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"] 
+
 textarea {
   overflow: auto;
   resize: vertical;
@@ -454,10 +451,7 @@ progress {
 [type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
-[type="search"] {
-  outline-offset: -2px;
-  -webkit-appearance: none;
-}
+[type="search"]
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
