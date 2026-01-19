@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>With Grace - Products</title>
+    <title>With Grace - Services</title>
+
+    <meta name= "description" content= "Catering non-profit organisation, helping people in need during the winter the season.">
+    <meta name= "keywords" content= "catering, non-profit, with grace, local charity, Northern Ireland, winter, volunteer, poverty">
  
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap-4.4.1.css">
@@ -17,6 +20,7 @@
 
     <!-- W3.CSS -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
  
 </head>
 
@@ -65,7 +69,41 @@ Our menu is built on the exceptional ingredients sourced from trusted Northern I
  We ensure that the ingredients we use are the highest quality attainable.</p>
 </div>
  
+<!-- Tab content -->
+<div id="Headquarters" class="tabcontent">
+  <h3>Our Headquarters</h3>
+  <p>Our headquarters is based in the heart of Derry, North of Ireland; where we manage this nation wide operation. With Grace's headquarters has pulled the community of Derry together, essentially becoming a pillar for what the community stands for: a refuge in hard times, a stage for local voices, a living symbol of Derry's spirit. </p>
 </div>
+<!--Second Tab-->
+<div id="Jobs" class="tabcontent">
+  <h3>Jobs</h3>
+  <p> Everyone helps where they're needed most. Some cook warm meals, others serve with a smile, and a few gather donated ingredients from local shops. There are people who wash dishes, people who sit and chat with guests, and people who quietly make sure no one goes hungry. Every job is an act of kindness, not a title, and everyone works side by side with the same purpose: to feed the homeless with dignity and compassion. 
+</p>
+</div>
+<!--Third Tab-->
+<div id="FAQs" class="tabcontent">
+  <h4>Do volunteers need experience?</h4>
+  <p>No, volunteers do not need any previous experience. We provide all necessary training and support to ensure everyone can contribute effectively.</p>
+  <h4>How often are meals served?</h4>
+  <p>Meals are served regularly throughout everyday of the week. The schedule is flexible and can cater to anyone.</p>
+  <h4>Do you accept donations?</h4>
+  <p>Yes, we accepts various donations which can very from ingredients, supplies or even monetary donations, which are all welcome.</p>
+  <h4>Who can come for a meal</h4>
+  <p>Anyone who's in need of one. No questions asked, no judgements.</p>
+</div>
+<!--Tab Content End -->
+
+</div>
+
+<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openQuery(event, 'Headquarters')">Headquarters</button>
+  <button class="tablinks" onclick="openQuery(event, 'Jobs')">Jobs</button>
+  <button class="tablinks" onclick="openQuery(event, 'FAQs')">FAQs</button>
+</div>
+
+
+
 </div>
  
     <!--Main content end-->
@@ -117,6 +155,13 @@ Our menu is built on the exceptional ingredients sourced from trusted Northern I
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap-4.4.1.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/tabsection.js"></script>
+  <script>
+
+    // Show the first tab by default
+    document.getElementById('London').style.display = 'block';
+    document.querySelector('.tab button').className += ' active';
+  </script>
  
  
    
