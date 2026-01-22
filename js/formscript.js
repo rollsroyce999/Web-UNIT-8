@@ -32,8 +32,3 @@ function downloadFormData() {
     // Revoke the object URL after download
     URL.revokeObjectURL(url);
 }
-
-function thanks() {
-    //Redirect ti another page after download
-    window.location.href = 'thankyou.html'; 
-}
